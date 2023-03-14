@@ -9,11 +9,11 @@ begin
 	begin
 		if (Clk'event and Clk = '1') then 
 			if (Reset = '1') then
-				v_Q := 20; 
-			elsif (v_Q /= 0) then
-				v_Q := v_Q - 1; 
+				v_Q := 11; 
+			elsif (v_Q /= 31) then
+				v_Q := v_Q + 1; 
 			else
-				v_Q := 20;
+				v_Q := 11;
 			end if;
 		end if;
 		Q <= v_Q;
