@@ -1,0 +1,80 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Git/COMPSYS305/Lab1/Wave Gen Enable
+Etest_wgen2
+Z1 w1679005900
+R0
+Z2 8C:/Git/COMPSYS305/Lab1/Wave Gen Enable/test_wgen2.vhd
+Z3 FC:/Git/COMPSYS305/Lab1/Wave Gen Enable/test_wgen2.vhd
+l0
+L2
+VnnmLQ??lDAz0Qe[C8;MkP1
+!s100 cMNj;]JCkVflK9F1KT7Sj1
+Z4 OV;C;10.5b;63
+32
+Z5 !s110 1679008267
+!i10b 1
+Z6 !s108 1679008267.000000
+Z7 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Wave Gen Enable/test_wgen2.vhd|
+Z8 !s107 C:/Git/COMPSYS305/Lab1/Wave Gen Enable/test_wgen2.vhd|
+!i113 1
+Z9 o-work work
+Z10 tExplicit 1 CvgOpt 0
+Atest
+DEx4 work 10 test_wgen2 0 22 nnmLQ??lDAz0Qe[C8;MkP1
+l12
+L4
+V0cL1`dz7cKbKlg@2Zzc]23
+!s100 ?Y1UNMg:G00;4f@b:fST_1
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Ewgen2
+Z11 w1679006944
+R0
+Z12 8C:/Git/COMPSYS305/Lab1/Wave Gen Enable/wgen2.vhd
+Z13 FC:/Git/COMPSYS305/Lab1/Wave Gen Enable/wgen2.vhd
+l0
+L1
+VeGCToEVGjIfc2Q2cPdn]51
+!s100 L@<BJ2XQ<zUV5B>zQh^@o3
+R4
+32
+Z14 !s110 1679008268
+!i10b 1
+R6
+Z15 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Wave Gen Enable/wgen2.vhd|
+Z16 !s107 C:/Git/COMPSYS305/Lab1/Wave Gen Enable/wgen2.vhd|
+!i113 1
+R9
+R10
+Abehaviour
+DEx4 work 5 wgen2 0 22 eGCToEVGjIfc2Q2cPdn]51
+l9
+L7
+VoGZ`M0ATDLI92Y:UDG0BU3
+!s100 =OZ>OCN0Nl6AOn^M?X0LJ1
+R4
+32
+R14
+!i10b 1
+R6
+R15
+R16
+!i113 1
+R9
+R10

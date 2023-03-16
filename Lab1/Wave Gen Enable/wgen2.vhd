@@ -1,20 +1,21 @@
-entity wgen1 is
-  port (X : in bit_vector(2 downto 0);
-        Enable: in bit;
-        A, B, C, Z : out bit);
-end entity wgen1;
+entity wgen2 is
+  port (
+    X : in bit_vector(2 downto 0);
+    Enable : in bit;
+    A, B, C, Z : out bit);
+end entity wgen2;
 
-architecture behaviour of wgen1 is
+architecture behaviour of wgen2 is
   signal v_A, v_B, v_C, v_Z : bit;
 begin
-  sigGen: process
+  sigGen : process
   begin
     v_A <= '1', '0' after 2 ns, '1' after 3 ns, '0' after 4 ns;
     v_B <= '0', '1' after 1 ns, '0' after 2 ns, '1' after 3 ns, '0' after 4 ns;
     v_C <= '1', '0' after 1 ns, '1' after 2 ns, '0' after 3 ns, '1' after 4 ns;
     wait for 5 ns;
   end process sigGen;
-  process(X, v_A, v_B, v_C)
+  process (X, v_A, v_B, v_C)
   begin
     case X is
       when "000" => v_Z <= v_A and v_B;

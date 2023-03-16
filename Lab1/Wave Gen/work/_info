@@ -1,129 +1,80 @@
 m255
-K3
+K4
+z2
 13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
 cModel Technology
-Z0 dC:\Git\COMPSYS305\Lab1\Wave Gen
+Z0 dC:/Git/COMPSYS305/Lab1/Wave Gen
 Etest_wgen1
-Z1 w1678921412
-Z2 dC:\Git\COMPSYS305\Lab1\Wave Gen
-Z3 8C:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen1.vhd
-Z4 FC:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen1.vhd
+Z1 w1679005900
+R0
+Z2 8C:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen1.vhd
+Z3 FC:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen1.vhd
 l0
 L2
-VY=g<Lc6FT9]N8KHXYoZ]G2
-Z5 OV;C;10.1d;51
+VL4?SWfB27O9Fl87VH?lG:3
+!s100 HZCjdKW]kI_NZoLaNBeFf1
+Z4 OV;C;10.5b;63
 32
-Z6 !s108 1678925728.281000
+Z5 !s110 1679008109
+!i10b 1
+Z6 !s108 1679008109.000000
 Z7 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen1.vhd|
 Z8 !s107 C:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen1.vhd|
-Z9 o-work work -O0
-Z10 tExplicit 1
-!s100 dal3DbhKLcWD`ifSS3fXL0
-!i10b 1
+!i113 1
+Z9 o-work work
+Z10 tExplicit 1 CvgOpt 0
 Atest
-DEx4 work 10 test_wgen1 0 22 Y=g<Lc6FT9]N8KHXYoZ]G2
+DEx4 work 10 test_wgen1 0 22 L4?SWfB27O9Fl87VH?lG:3
 l11
 L4
-VTf?c2TL<B@ND>V^OdY4l[0
-R5
+V`@_W7@@;@<EEbo50YA<mL2
+!s100 b?65;W0f@DHSK@Q6O3k:`3
+R4
 32
+R5
+!i10b 1
 R6
 R7
 R8
+!i113 1
 R9
 R10
-!s100 fD0=5IH?hSlkg^CMjj]P91
-!i10b 1
-Etest_wgen2
-Z11 w1678921664
-R2
-Z12 8C:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen2.vhd
-Z13 FC:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen2.vhd
-l0
-L2
-VISA@Y]5MN8`H^n_oVQd9h0
-R5
-32
-Z14 !s108 1678926549.109000
-Z15 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen2.vhd|
-Z16 !s107 C:/Git/COMPSYS305/Lab1/Wave Gen/test_wgen2.vhd|
-R9
-R10
-!s100 ]3D1TLAkjh@aB2>a2kH8;3
-!i10b 1
-Atest
-DEx4 work 10 test_wgen2 0 22 ISA@Y]5MN8`H^n_oVQd9h0
-l12
-L4
-V>gfUOzJ^MgQIQ_iIXF0zE0
-!s100 IAV0de8?FZfO0S2E>V[z61
-R5
-32
-R14
-R15
-R16
-R9
-R10
-!i10b 1
 Ewgen1
-Z17 w1678926226
-R2
-Z18 8C:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd
-Z19 FC:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd
+R1
+R0
+Z11 8C:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd
+Z12 FC:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd
 l0
 L1
-VgfNU1Lho=i75NS5dTHCD[2
-R5
+Ven;4R^?TW9naje`@57]Yo1
+!s100 zhb`XVQHG=PPm=gO4[oP]1
+R4
 32
-Z20 !s108 1678926235.967000
-Z21 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd|
-Z22 !s107 C:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd|
-R9
-R10
-!s100 CzIAlFW6<IcC=O^ik@:4Z2
-!i10b 1
-Abehaviour
-DEx4 work 5 wgen1 0 22 gfNU1Lho=i75NS5dTHCD[2
-l9
-L7
-V>iWdg1RHF2>0[GgJBkFHW3
 R5
-32
-R20
-R21
-R22
-R9
-R10
-!s100 Kzbbgaf8hWRQSI45bcfH43
 !i10b 1
-Ewgen2
-Z23 w1678926359
-R2
-R18
-R19
-l0
-L1
-Vi]Jd<hM<7cm5PQcQ4ll[U0
-!s100 VgG1FoMeoSCc_j=3P2M7m2
-R5
-32
-!i10b 1
-Z24 !s108 1678926549.227000
-R21
-Z25 !s107 C:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd|
+R6
+Z13 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd|
+Z14 !s107 C:/Git/COMPSYS305/Lab1/Wave Gen/wgen1.vhd|
+!i113 1
 R9
 R10
 Abehaviour
-Z26 DEx4 work 5 wgen2 0 22 i]Jd<hM<7cm5PQcQ4ll[U0
-l9
-L7
-Z27 Vb07U_KcK0mGQbWbZNF9Zo0
-Z28 !s100 F2U4X@4AIhVkSHb:;Pe_P3
-R5
+DEx4 work 5 wgen1 0 22 en;4R^?TW9naje`@57]Yo1
+l8
+L6
+VNl6og]k5=kQN1<Ge:A=_U3
+!s100 a3jZNHV2cg2M9@g4E@hZK3
+R4
 32
+R5
 !i10b 1
-R24
-R21
-R25
+R6
+R13
+R14
+!i113 1
 R9
 R10

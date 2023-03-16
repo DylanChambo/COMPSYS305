@@ -1,0 +1,80 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Git/COMPSYS305/Lab1/UpCounter
+Ecounter
+Z1 w1679006852
+R0
+Z2 8C:/Git/COMPSYS305/Lab1/UpCounter/counter.vhd
+Z3 FC:/Git/COMPSYS305/Lab1/UpCounter/counter.vhd
+l0
+L1
+VF:zVHlGS=EYVYXN^9@L?l2
+!s100 [o>2=A>I>R:D<^62L@IaI1
+Z4 OV;C;10.5b;63
+32
+Z5 !s110 1679007701
+!i10b 1
+Z6 !s108 1679007701.000000
+Z7 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/UpCounter/counter.vhd|
+Z8 !s107 C:/Git/COMPSYS305/Lab1/UpCounter/counter.vhd|
+!i113 1
+Z9 o-work work
+Z10 tExplicit 1 CvgOpt 0
+Abehaviour
+DEx4 work 7 counter 0 22 F:zVHlGS=EYVYXN^9@L?l2
+l6
+L5
+VVeab7ELYbAP[UaaCV@Q_@1
+!s100 j2f@@DaAR>g=]1eJ6`hNo1
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Etest_counter
+Z11 w1678826519
+R0
+Z12 8C:/Git/COMPSYS305/Lab1/UpCounter/test_counter.vhd
+Z13 FC:/Git/COMPSYS305/Lab1/UpCounter/test_counter.vhd
+l0
+L2
+VmQ[7Dd<Y38=e=WS4DGkag1
+!s100 cXXK5<eTTH[Q69O5hIha22
+R4
+32
+R5
+!i10b 1
+R6
+Z14 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/UpCounter/test_counter.vhd|
+Z15 !s107 C:/Git/COMPSYS305/Lab1/UpCounter/test_counter.vhd|
+!i113 1
+R9
+R10
+Amy_test
+DEx4 work 12 test_counter 0 22 mQ[7Dd<Y38=e=WS4DGkag1
+l13
+L5
+VOlaViIz8aRGn6Qk6DRg8U0
+!s100 g@PnLgfIPj;jj?<`Wi1a;3
+R4
+32
+R5
+!i10b 1
+R6
+R14
+R15
+!i113 1
+R9
+R10

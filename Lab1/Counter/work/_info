@@ -1,67 +1,76 @@
 m255
 K3
+z0
 13
 cModel Technology
-Z0 dC:\Git\COMPSYS305\Lab1\Counter
+dC:\Git\COMPSYS305\Lab1\Counter
 Ecounter
-Z1 w1678920230
-Z2 dC:\Git\COMPSYS305\Lab1\Counter
-Z3 8C:/Git/COMPSYS305/Lab1/Counter/counter.vhd
-Z4 FC:/Git/COMPSYS305/Lab1/Counter/counter.vhd
+Z0 w1679007407
+Z1 dC:/Git/COMPSYS305/Lab1/Counter
+Z2 8C:/Git/COMPSYS305/Lab1/Counter/counter.vhd
+Z3 FC:/Git/COMPSYS305/Lab1/Counter/counter.vhd
 l0
 L1
-VdRoPV;^[?njolLh_9UXKA0
-Z5 OV;C;10.1d;51
+VPn9;MnDJE`YUDg>hjzMg_3
+!s100 1>k<4TRoN7<=:>bK99co]1
+Z4 OV;C;10.5b;63
 32
-Z6 !s108 1678926775.526000
+Z5 !s110 1679007905
+!i10b 1
+Z6 !s108 1679007905.000000
 Z7 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Counter/counter.vhd|
 Z8 !s107 C:/Git/COMPSYS305/Lab1/Counter/counter.vhd|
-Z9 o-work work -O0
-Z10 tExplicit 1
-!s100 ?fKTU^z^ZH8eXRD_f41lJ2
-!i10b 1
+!i113 1
+Z9 o-work work
+Z10 tExplicit 1 CvgOpt 0
 Abehaviour
-DEx4 work 7 counter 0 22 dRoPV;^[?njolLh_9UXKA0
-l6
-L5
-V7IAmziO>o:Y2Yfb<dGC;d1
-R5
+DEx4 work 7 counter 0 22 Pn9;MnDJE`YUDg>hjzMg_3
+l7
+L6
+VUaj4kH@BI=oM6UY>S4@Om2
+!s100 I0P=K[>BI@Q?U5Q21ciRI0
+R4
 32
+R5
+!i10b 1
 R6
 R7
 R8
+!i113 1
 R9
 R10
-!s100 L4kCUKF0KZB:eDQR8N6ET2
-!i10b 1
 Etest_counter
+Z11 w1678826519
 R1
-R2
-Z11 8C:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd
-Z12 FC:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd
+Z12 8C:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd
+Z13 FC:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd
 l0
 L2
-VDfT:FLChg@ETYXN^0SBzo0
-!s100 9NM;2zcaaFZ[OhX35[LU50
-R5
+VmQ[7Dd<Y38=e=WS4DGkag1
+!s100 cXXK5<eTTH[Q69O5hIha22
+R4
 32
+R5
 !i10b 1
-Z13 !s108 1678926775.651000
+R6
 Z14 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd|
 Z15 !s107 C:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd|
+!i113 1
 R9
 R10
 Amy_test
-DEx4 work 12 test_counter 0 22 DfT:FLChg@ETYXN^0SBzo0
+Z16 DEx4 work 12 test_counter 0 22 mQ[7Dd<Y38=e=WS4DGkag1
 l13
 L5
-V[mU@e;Ao10`]b^DgPL8LR3
-!s100 Q[58Q[O[76zlkVKgmCE@J2
-R5
+Z17 VOlaViIz8aRGn6Qk6DRg8U0
+Z18 !s100 g@PnLgfIPj;jj?<`Wi1a;3
+R4
 32
+R5
 !i10b 1
-R13
+R6
 R14
 R15
+!i113 1
 R9
 R10
