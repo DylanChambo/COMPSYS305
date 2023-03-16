@@ -1,0 +1,67 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Git\COMPSYS305\Lab1\Counter
+Ecounter
+Z1 w1678920230
+Z2 dC:\Git\COMPSYS305\Lab1\Counter
+Z3 8C:/Git/COMPSYS305/Lab1/Counter/counter.vhd
+Z4 FC:/Git/COMPSYS305/Lab1/Counter/counter.vhd
+l0
+L1
+VdRoPV;^[?njolLh_9UXKA0
+Z5 OV;C;10.1d;51
+32
+Z6 !s108 1678926775.526000
+Z7 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Counter/counter.vhd|
+Z8 !s107 C:/Git/COMPSYS305/Lab1/Counter/counter.vhd|
+Z9 o-work work -O0
+Z10 tExplicit 1
+!s100 ?fKTU^z^ZH8eXRD_f41lJ2
+!i10b 1
+Abehaviour
+DEx4 work 7 counter 0 22 dRoPV;^[?njolLh_9UXKA0
+l6
+L5
+V7IAmziO>o:Y2Yfb<dGC;d1
+R5
+32
+R6
+R7
+R8
+R9
+R10
+!s100 L4kCUKF0KZB:eDQR8N6ET2
+!i10b 1
+Etest_counter
+R1
+R2
+Z11 8C:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd
+Z12 FC:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd
+l0
+L2
+VDfT:FLChg@ETYXN^0SBzo0
+!s100 9NM;2zcaaFZ[OhX35[LU50
+R5
+32
+!i10b 1
+Z13 !s108 1678926775.651000
+Z14 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd|
+Z15 !s107 C:/Git/COMPSYS305/Lab1/Counter/test_counter.vhd|
+R9
+R10
+Amy_test
+DEx4 work 12 test_counter 0 22 DfT:FLChg@ETYXN^0SBzo0
+l13
+L5
+V[mU@e;Ao10`]b^DgPL8LR3
+!s100 Q[58Q[O[76zlkVKgmCE@J2
+R5
+32
+!i10b 1
+R13
+R14
+R15
+R9
+R10
