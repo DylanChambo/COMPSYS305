@@ -29,9 +29,16 @@ begin
     -- Initialise Signals 
     init : process
     begin
-        rst <= '0', '1' after 2 ns, '0' after 7 ns;
-        enable <= '1', '1' after 255 ns, '1' after 610 ns;
-        mode <= "00", "01" after 300 ns, "10" after 600 ns, "11" after 900 ns;
+        rst <= '0', '1' after 2 ns, '0' after 7 ns,
+            '1' after 450 ns, '0' after 460 ns,
+            '1' after 750 ns, '0' after 760 ns,
+            '1' after 1650 ns, '0' after 1660 ns,
+            '1' after 2250 ns, '0' after 2260 ns;
+        enable <= '1', '0' after 300 ns, '1' after 400 ns,
+            '0' after 900 ns, '1' after 1000 ns,
+            '0' after 1500 ns, '1' after 1600 ns,
+            '0' after 2100 ns, '1' after 2200 ns;
+        mode <= "00", "01" after 600 ns, "10" after 1200 ns, "11" after 1800 ns;
         wait;
     end process init;
 

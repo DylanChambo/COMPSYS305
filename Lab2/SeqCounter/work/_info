@@ -1,94 +1,81 @@
 m255
-K4
-z2
+K3
 13
-!s112 1.1
-!i10d 8192
-!i10e 25
-!i10f 100
 cModel Technology
-Z0 dC:/Git/COMPSYS305/Lab2/SeqCounter
+Z0 dC:\Git\COMPSYS305\Lab2\SeqCounter
 Eseq_counter
-Z1 w1679353553
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
-Z6 8C:/Git/COMPSYS305/Lab2/SeqCounter/seq_counter.vhd
-Z7 FC:/Git/COMPSYS305/Lab2/SeqCounter/seq_counter.vhd
+Z1 w1679528238
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Git\COMPSYS305\Lab2\SeqCounter
+Z7 8C:/Git/COMPSYS305/Lab2/SeqCounter/seq_counter.vhd
+Z8 FC:/Git/COMPSYS305/Lab2/SeqCounter/seq_counter.vhd
 l0
 L5
-VjjORNZ1Hz]@AkEjhKL1^o3
-!s100 34zKSl]=VFA]mVTc^NGBf0
-Z8 OV;C;10.5b;63
+V6f?AWG92F4U3;A@EVdDBE1
+Z9 OV;C;10.1d;51
 32
-Z9 !s110 1679353554
-!i10b 1
-Z10 !s108 1679353554.000000
+Z10 !s108 1679528251.317000
 Z11 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/SeqCounter/seq_counter.vhd|
 Z12 !s107 C:/Git/COMPSYS305/Lab2/SeqCounter/seq_counter.vhd|
-!i113 1
-Z13 o-work work
-Z14 tExplicit 1 CvgOpt 0
+Z13 o-work work -O0
+Z14 tExplicit 1
+!s100 kfDjJHoMaOE;4`]F_@[?_0
+!i10b 1
 Abehaviour
 R2
 R3
 R4
 R5
-DEx4 work 11 seq_counter 0 22 jjORNZ1Hz]@AkEjhKL1^o3
+DEx4 work 11 seq_counter 0 22 6f?AWG92F4U3;A@EVdDBE1
 l18
 L15
-VZS1>T]@G2BOJOg3ENdKVO2
-!s100 _JiZNVT5mZHX^>9:?IF8S1
-R8
-32
+V0G`Dm:4gP=P;A^N`;DO3K2
 R9
-!i10b 1
+32
 R10
 R11
 R12
-!i113 1
 R13
 R14
+!s100 zW_A39?WanS3RTQ_C?:c^2
+!i10b 1
 Etest_seq_counter
-Z15 w1679352499
-Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z15 w1679527384
+Z16 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 R4
 R5
-R0
+R6
 Z17 8C:/Git/COMPSYS305/Lab2/SeqCounter/test_seq_counter.vhd
 Z18 FC:/Git/COMPSYS305/Lab2/SeqCounter/test_seq_counter.vhd
 l0
 L5
-VJj?DRheMK=k2fhi8M?MDK0
-!s100 RE<M31XA0Sd7Ki`ggDo;73
-R8
+VaHAP:Lhm1BX7O=lTB3Czd3
+!s100 7YL0VF4Nl;bgaaMSLGYhG0
+R9
 32
-Z19 !s110 1679353559
 !i10b 1
-Z20 !s108 1679353559.000000
-Z21 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/SeqCounter/test_seq_counter.vhd|
-Z22 !s107 C:/Git/COMPSYS305/Lab2/SeqCounter/test_seq_counter.vhd|
-!i113 1
+Z19 !s108 1679528253.841000
+Z20 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/SeqCounter/test_seq_counter.vhd|
+Z21 !s107 C:/Git/COMPSYS305/Lab2/SeqCounter/test_seq_counter.vhd|
 R13
 R14
 Atest
 R16
 R4
 R5
-Z23 DEx4 work 16 test_seq_counter 0 22 Jj?DRheMK=k2fhi8M?MDK0
+Z22 DEx4 work 16 test_seq_counter 0 22 aHAP:Lhm1BX7O=lTB3Czd3
 l28
 L8
-Z24 V2BW<Fa9Tk7aLzcDZ=oLMA1
-Z25 !s100 cUAa`cDZWWb[8<4j7eLgJ1
-R8
+Z23 VhN4E2KjeYIHo4CLK9fNji3
+Z24 !s100 CCKZCUemaZ3XkDVKoNC]Q2
+R9
 32
-R19
 !i10b 1
+R19
 R20
 R21
-R22
-!i113 1
 R13
 R14

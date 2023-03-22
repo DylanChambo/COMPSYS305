@@ -18,27 +18,25 @@ begin
     process (clk)
         variable v_Q : std_logic_vector(3 downto 0) := "1001";
     begin
-        if (enable = '1') then
-            if ((Clk'event and Clk = '1')) then
-                if (init = '1') then
-                    case direction is
-                        when '0' => v_Q := "1001";
-                        when others => v_Q := "0000";
-                    end case;
+        if ((Clk'event and Clk = '1') and enable = '1') then
+            if (init = '1') then
+                case direction is
+                    when '0' => v_Q := "1001";
+                    when others => v_Q := "0000";
+                end case;
+            else
+                if (v_Q = "0000" and direction = '0') then
+                    v_Q := "1001";
+                elsif (v_Q = "1001" and direction = '1') then
+                    v_Q := "0000";
+                elsif (direction = '1') then
+                    v_Q := v_Q + '1';
                 else
-                    if (v_Q = "0000" and direction = '0') then
-                        v_Q := "1001";
-                    elsif (v_Q = "1001" and direction = '1') then
-                        v_Q := "0000";
-                    elsif (direction = '1') then
-                        v_Q := v_Q + '1';
-                    else
-                        v_Q := v_Q - '1';
-                    end if;
-
+                    v_Q := v_Q - '1';
                 end if;
-                Q <= v_Q;
+
             end if;
+            Q <= v_Q;
         end if;
     end process;
 end architecture;

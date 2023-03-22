@@ -29,7 +29,8 @@ begin
     -- Initialise Signals 
     initialise : process
     begin
-        init <= '0', '1' after 2 ns, '0' after 7 ns;
+        init <= '0', '1' after 2 ns, '0' after 7 ns,
+            '1' after 720 ns, '0' after 730 ns;
         enable <= '1', '0' after 255 ns, '1' after 610 ns;
         direction <= '0', '1' after 300 ns, '0' after 600 ns, '1' after 900 ns;
         wait;

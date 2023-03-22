@@ -1,163 +1,144 @@
 m255
-K4
-z2
+K3
 13
-!s112 1.1
-!i10d 8192
-!i10e 25
-!i10f 100
 cModel Technology
-Z0 dC:/Git/COMPSYS305/Lab2/BCDCounter
+Z0 dC:\Git\COMPSYS305\Lab2\BCDCounter
 Ebcd_counter
-Z1 w1679432509
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
-Z6 8C:/Git/COMPSYS305/Lab2/BCDCounter/bcd_counter.vhd
-Z7 FC:/Git/COMPSYS305/Lab2/BCDCounter/bcd_counter.vhd
+Z1 w1679526062
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Git\COMPSYS305\Lab2\BCDCounter
+Z7 8C:/Git/COMPSYS305/Lab2/BCDCounter/bcd_counter.vhd
+Z8 FC:/Git/COMPSYS305/Lab2/BCDCounter/bcd_counter.vhd
 l0
 L5
-VJzEhT37mBnDWDlMV<_mW<0
-!s100 3A_8gZDd9T<=:mkgiLRTV2
-Z8 OV;C;10.5b;63
+VlK2O`1:h1H3n;i_22=bbo3
+Z9 OV;C;10.1d;51
 32
-Z9 !s110 1679434530
-!i10b 1
-Z10 !s108 1679434530.000000
+Z10 !s108 1679528485.173000
 Z11 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/BCDCounter/bcd_counter.vhd|
 Z12 !s107 C:/Git/COMPSYS305/Lab2/BCDCounter/bcd_counter.vhd|
-!i113 1
-Z13 o-work work
-Z14 tExplicit 1 CvgOpt 0
+Z13 o-work work -O0
+Z14 tExplicit 1
+!s100 mL2PTdVc_eRHFH:d>FFPB2
+!i10b 1
 Abehaviour
 R2
 R3
 R4
 R5
-DEx4 work 11 bcd_counter 0 22 JzEhT37mBnDWDlMV<_mW<0
+DEx4 work 11 bcd_counter 0 22 lK2O`1:h1H3n;i_22=bbo3
 l17
 L15
-VOZ6>ZPnm9_IU2[14h9R=F3
-!s100 zF4PiT3VA=iN=G@M?kk:_3
-R8
-32
+Va:ABl7lN3LzIQ4K:bdeOa1
 R9
-!i10b 1
+32
 R10
 R11
 R12
-!i113 1
 R13
 R14
+!s100 zA>binM^U0Y1oFMo:`RL82
+!i10b 1
 Edouble_counter
-Z15 w1679434960
+R1
 R2
 R3
 R4
 R5
-R0
-Z16 8C:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd
-Z17 FC:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd
+R6
+Z15 8C:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd
+Z16 FC:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd
 l0
 L5
-VUYHEUX2Y>_kzj5i5jmLFB0
-!s100 d7M3FlDUYW29QIf4^94O81
-R8
+VY>giVXV3l?F81=9BX;FV62
+R9
 32
-Z18 !s110 1679434967
-!i10b 1
-Z19 !s108 1679434967.000000
-Z20 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd|
-Z21 !s107 C:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd|
-!i113 1
+Z17 !s108 1679528487.905000
+Z18 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd|
+Z19 !s107 C:/Git/COMPSYS305/Lab2/BCDCounter/double_counter.vhd|
 R13
 R14
+!s100 CNnfM8coaFE2Uf;AL1VPj1
+!i10b 1
 Abehaviour
 R2
 R3
 R4
 R5
-DEx4 work 14 double_counter 0 22 UYHEUX2Y>_kzj5i5jmLFB0
+DEx4 work 14 double_counter 0 22 Y>giVXV3l?F81=9BX;FV62
 l28
 L15
-VB:^e2zLWQD3:?^I6k9DjB2
-!s100 ;_9Jj0ICQ?L2mDjcPJ5D61
-R8
+V_V`zQS@3;N_YPaJCZ[T_m3
+R9
 32
+R17
 R18
-!i10b 1
 R19
-R20
-R21
-!i113 1
 R13
 R14
+!s100 BPB5<A10m:1FP`F22bC<42
+!i10b 1
 Etest_bcd_counter
-Z22 w1679432544
+Z20 w1679527478
 R2
 R3
 R4
 R5
-R0
-Z23 8C:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd
-Z24 FC:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd
+R6
+Z21 8C:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd
+Z22 FC:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd
 l0
 L5
-Vj<WDQ;MN@=imaABmjX9051
-!s100 <0R^f=i=^Ug:N]^Q4EW:C2
-R8
+VIV[Tm3hMTRS]WRSVh7]4=3
+R9
 32
-Z25 !s110 1679434969
-!i10b 1
-Z26 !s108 1679434969.000000
-Z27 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd|
-Z28 !s107 C:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd|
-!i113 1
+Z23 !s108 1679528490.368000
+Z24 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd|
+Z25 !s107 C:/Git/COMPSYS305/Lab2/BCDCounter/test_bcd_counter.vhd|
 R13
 R14
+!s100 4S1mS`=agnXJI8hN^[WE`1
+!i10b 1
 Atest
 R2
 R3
 R4
 R5
-DEx4 work 16 test_bcd_counter 0 22 j<WDQ;MN@=imaABmjX9051
+DEx4 work 16 test_bcd_counter 0 22 IV[Tm3hMTRS]WRSVh7]4=3
 l28
 L8
-V3JMGjU`40?;O9YF]6bfY[2
-!s100 >[0gdGdC[K3B76emNMSPf0
-R8
+VOb2PkO@TYEK:_liDkTi4Z0
+R9
 32
+R23
+R24
 R25
-!i10b 1
-R26
-R27
-R28
-!i113 1
 R13
 R14
+!s100 hX[<]R6Cj^X::6F?6<J^I1
+!i10b 1
 Etest_double_counter
-Z29 w1679433373
+Z26 w1679527565
 R2
 R3
 R4
 R5
-R0
-Z30 8C:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd
-Z31 FC:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd
+R6
+Z27 8C:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd
+Z28 FC:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd
 l0
 L5
-V9b[9V:;3H5zZin@XZjc4l1
-!s100 8EBjX;3Y8JgNfB<6:Tcl;1
-R8
+V?]N9SACEW93omSo`cN7C20
+!s100 EidL3_>kz0?_H>f[SGEjd0
+R9
 32
-Z32 !s110 1679434972
 !i10b 1
-Z33 !s108 1679434972.000000
-Z34 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd|
-Z35 !s107 C:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd|
-!i113 1
+Z29 !s108 1679528492.672000
+Z30 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd|
+Z31 !s107 C:/Git/COMPSYS305/Lab2/BCDCounter/test_double_counter.vhd|
 R13
 R14
 Atest
@@ -165,18 +146,16 @@ R2
 R3
 R4
 R5
-Z36 DEx4 work 19 test_double_counter 0 22 9b[9V:;3H5zZin@XZjc4l1
+DEx4 work 19 test_double_counter 0 22 ?]N9SACEW93omSo`cN7C20
 l28
 L8
-Z37 VVLQ^3HXVL6ha2agJXT7R:3
-Z38 !s100 7K?;GXklEXHAjPGVenZDB2
-R8
+VJdXNSbjHgDPI26[4KFZGS0
+!s100 G7`ZLagQW<WY1BcoooJ7>1
+R9
 32
-R32
 !i10b 1
-R33
-R34
-R35
-!i113 1
+R29
+R30
+R31
 R13
 R14
