@@ -28,7 +28,7 @@ begin
     -- Initialise Signals 
     initialise : process
     begin
-        t_start <= '0', '1' after 0.1 sec, '0' after 0.2 sec, '1' after 70 sec, '0' after 70.6 sec;
+        t_start <= '0', '1' after 0.4 sec, '0' after 0.6 sec, '1' after 70 sec, '0' after 70.6 sec;
         wait;
     end process initialise;
 
