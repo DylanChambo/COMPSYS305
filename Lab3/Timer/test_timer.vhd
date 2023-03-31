@@ -11,8 +11,8 @@ architecture test of test_timer is
     constant clk_period : time := 1 sec / clk_hz;
 
     signal t_clk : std_logic := '1';
-    signal t_start : std_logic := '1';
-    signal t_data_in : std_logic_vector(9 downto 0) := "1101011001";
+    signal t_start : std_logic := '0';
+    signal t_data_in : std_logic_vector(9 downto 0) := "0000011001";
     signal t_minutes, t_tenSec, t_oneSec : std_logic_vector(6 downto 0);
     signal t_time_out : std_logic;
 
@@ -28,7 +28,7 @@ begin
     -- Initialise Signals 
     initialise : process
     begin
-        t_start <= '1', '0' after 1.1 sec;
+        t_start <= '0', '1' after 0.1 sec, '0' after 0.2 sec, '1' after 70 sec, '0' after 70.6 sec;
         wait;
     end process initialise;
 

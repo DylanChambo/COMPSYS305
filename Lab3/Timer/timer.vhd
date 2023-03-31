@@ -13,11 +13,11 @@ end timer;
 
 architecture behaviour of timer is
 
-    signal min_enable, ten_enable, one_enable : std_logic;
-    signal seconds_overflow : std_logic;
-    signal minutes, tenSec, oneSec : std_logic_vector(3 downto 0);
-    signal top : std_logic_vector(9 downto 0);
-
+    signal min_enable, ten_enable, one_enable : std_logic := '0';
+    signal seconds_overflow : std_logic := '0';
+    signal minutes, tenSec, oneSec : std_logic_vector(3 downto 0) := "0000";
+    signal top : std_logic_vector(9 downto 0) := "0000000000";
+    signal temp : std_logic;
     component bcd_counter is
         port (
             clk : in std_logic;
@@ -34,37 +34,6 @@ architecture behaviour of timer is
             SevenSeg_out : out std_logic_vector(6 downto 0));
     end component;
 begin
-    process (clk)
-    begin
-        if (Clk'event and Clk = '1') then
-            if (start = '1') then
-                --If the timer is starting
-                top <= data_in;
-                time_out <= '0';
-                seconds_overflow <= start;
-                one_enable <= '1';
-            elsif (minutes(1 downto 0) & tenSec & oneSec + '1' >= top) then
-                -- If the timer is Finished
-                time_out <= '1';
-                one_enable <= '0';
-            else
-                -- If the timer is Counting
-                if (oneSec = "1001") then
-                    ten_enable <= '1';
-                    if (tenSec = "0101") then
-                        min_enable <= '1';
-                        seconds_overflow <= '1';
-                    else
-                        min_enable <= '0';
-                        seconds_overflow <= start;
-                    end if;
-                else
-                    ten_enable <= '0';
-                    min_enable <= '0';
-                end if;
-            end if;
-        end if;
-    end process;
     -- Minute Counter and Seven Seg Converter
     min_BCD : bcd_counter port map(
         clk => clk,
@@ -82,11 +51,11 @@ begin
     tenSec_BCD : bcd_counter port map(
         clk => clk,
         direction => '1',
-        init => seconds_overflow,
+        init => temp,
         enable => ten_enable,
         Q => tenSec
     );
-
+    temp <= seconds_overflow or start;
     ten_SevenSEG : BCD_to_SevenSeg port map(
         BCD_digit => tenSec,
         SevenSeg_out => tenSec_Dig
@@ -104,4 +73,51 @@ begin
         BCD_digit => oneSec,
         SevenSeg_out => oneSec_Dig
     );
+
+    process (start)
+    begin
+        if (start = '1') then
+            -- Set the Top of the counter
+            top(9 downto 8) <= data_in(9 downto 8);
+
+            if (data_in(7 downto 4) > "0101") then
+                top(7 downto 4) <= "0101";
+            else
+                top(7 downto 4) <= data_in(7 downto 4);
+            end if;
+
+            if (data_in(3 downto 0) > "1001") then
+                top(3 downto 0) <= "1001";
+            else
+                top(3 downto 0) <= data_in(3 downto 0);
+            end if;
+        end if;
+    end process;
+
+    process (oneSec)
+    begin
+        -- If the timer is Counting
+        if (minutes(1 downto 0) & tenSec & oneSec = top) then
+            one_enable <= '0';
+            time_out <= '1';
+        else
+            one_enable <= '1';
+            time_out <= '0';
+            if (oneSec = "1001") then
+                ten_enable <= '1';
+                if (tenSec = "0101") then
+                    min_enable <= '1';
+                    seconds_overflow <= '1';
+                else
+                    min_enable <= '0';
+                    seconds_overflow <= '0';
+                end if;
+            else
+                ten_enable <= '0';
+                min_enable <= '0';
+                seconds_overflow <= '0';
+            end if;
+        end if;
+
+    end process;
 end architecture;
