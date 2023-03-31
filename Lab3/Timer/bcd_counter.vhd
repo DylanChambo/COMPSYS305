@@ -16,7 +16,7 @@ architecture behaviour of bcd_counter is
 
 begin
     process (clk)
-        variable v_Q : std_logic_vector(3 downto 0) := "1001";
+        variable v_Q : std_logic_vector(3 downto 0) := "0000";
     begin
         if (Clk'event and Clk = '1') then
             if (init = '1') then
