@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Git/COMPSYS305/Lab3/Timer
 Ebcd_counter
-Z1 w1680302186
+Z1 w1680389768
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -19,13 +19,13 @@ Z6 8C:/Git/COMPSYS305/Lab3/Timer/bcd_counter.vhd
 Z7 FC:/Git/COMPSYS305/Lab3/Timer/bcd_counter.vhd
 l0
 L5
-VJzEhT37mBnDWDlMV<_mW<0
-!s100 3A_8gZDd9T<=:mkgiLRTV2
+V4@aSQOVnE[hOQUQi5]Sk<2
+!s100 ^X8WehD7Cfb1U;Hh4=Zk32
 Z8 OV;C;10.5b;63
 32
-Z9 !s110 1680302211
+Z9 !s110 1680389774
 !i10b 1
-Z10 !s108 1680302211.000000
+Z10 !s108 1680389774.000000
 Z11 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/bcd_counter.vhd|
 Z12 !s107 C:/Git/COMPSYS305/Lab3/Timer/bcd_counter.vhd|
 !i113 1
@@ -36,11 +36,11 @@ R2
 R3
 R4
 R5
-DEx4 work 11 bcd_counter 0 22 JzEhT37mBnDWDlMV<_mW<0
+DEx4 work 11 bcd_counter 0 22 4@aSQOVnE[hOQUQi5]Sk<2
 l17
 L15
-VP>4ZWR@Y9D:m_aO7`mVK83
-!s100 b_O981c<=73ocO=L2@GNC0
+Vo9R<9JRSjf0>YR@LA>Xe11
+!s100 36Vdh`IKg1[g`ZM@czO?i3
 R8
 32
 R9
@@ -52,7 +52,7 @@ R12
 R13
 R14
 Ebcd_to_sevenseg
-Z15 w1680221256
+Z15 w1680387472
 R4
 R5
 R0
@@ -60,13 +60,13 @@ Z16 8C:/Git/COMPSYS305/Lab3/Timer/BCD_to_7Seg.vhd
 Z17 FC:/Git/COMPSYS305/Lab3/Timer/BCD_to_7Seg.vhd
 l0
 L7
-V<CMXcAffPU68<bUdIhTbc0
-!s100 Ml=bdEfBYmGnYz_@HO0:o0
+Veh_ga95zaEH8PE0=@6D:F0
+!s100 bzczKGT^AkBKiUd`4T:Od2
 R8
 32
-Z18 !s110 1680235892
+Z18 !s110 1680387600
 !i10b 1
-Z19 !s108 1680235892.000000
+Z19 !s108 1680387599.000000
 Z20 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/BCD_to_7Seg.vhd|
 Z21 !s107 C:/Git/COMPSYS305/Lab3/Timer/BCD_to_7Seg.vhd|
 !i113 1
@@ -75,11 +75,11 @@ R14
 Aarc1
 R4
 R5
-DEx4 work 15 bcd_to_sevenseg 0 22 <CMXcAffPU68<bUdIhTbc0
-l14
-L13
-V8GEnU==hJ15DLYkW`P2ok3
-!s100 lzoEG@[1_aA[9od24BlSl3
+DEx4 work 15 bcd_to_sevenseg 0 22 eh_ga95zaEH8PE0=@6D:F0
+l15
+L14
+VHDPoR5C=a:>P<QJPcbYWa0
+!s100 YlfCVSc2nRC>[a^JHP]I92
 R8
 32
 R18
@@ -105,11 +105,11 @@ Vj<WDQ;MN@=imaABmjX9051
 !s100 <0R^f=i=^Ug:N]^Q4EW:C2
 R8
 32
-Z25 !s110 1680225505
+R18
 !i10b 1
-Z26 !s108 1680225505.000000
-Z27 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/test_bcd_counter.vhd|
-Z28 !s107 C:/Git/COMPSYS305/Lab3/Timer/test_bcd_counter.vhd|
+Z25 !s108 1680387600.000000
+Z26 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/test_bcd_counter.vhd|
+Z27 !s107 C:/Git/COMPSYS305/Lab3/Timer/test_bcd_counter.vhd|
 !i113 1
 R13
 R14
@@ -125,34 +125,34 @@ V@zX_><PR@5Ig5=ZZFn>IS0
 !s100 Y0Ah;@;=^C`lQE1AD8@m_3
 R8
 32
-R25
+R18
 !i10b 1
+R25
 R26
 R27
-R28
 !i113 1
 R13
 R14
 Etest_timer
-Z29 w1680302274
+Z28 w1680389941
 R2
 R3
 R4
 R5
 R0
-Z30 8C:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd
-Z31 FC:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd
+Z29 8C:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd
+Z30 FC:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd
 l0
 L5
 ViG<15fACa3[0m[9<XGmiT2
 !s100 U]96NOSnY1[DLBY>?aHe;1
 R8
 32
-Z32 !s110 1680302280
+Z31 !s110 1680389945
 !i10b 1
-Z33 !s108 1680302280.000000
-Z34 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd|
-Z35 !s107 C:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd|
+Z32 !s108 1680389945.000000
+Z33 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd|
+Z34 !s107 C:/Git/COMPSYS305/Lab3/Timer/test_timer.vhd|
 !i113 1
 R13
 R14
@@ -161,41 +161,41 @@ R2
 R3
 R4
 R5
-Z36 DEx4 work 10 test_timer 0 22 iG<15fACa3[0m[9<XGmiT2
+Z35 DEx4 work 10 test_timer 0 22 iG<15fACa3[0m[9<XGmiT2
 l27
 L8
-VMSYY>TB[iW@REg`CTm7K11
-!s100 I;BQ>X8UiQ17kRVGcBSS<0
+Z36 VRE0jzMnje5dde>X1kHT?K2
+Z37 !s100 KzkJ5F2QHmgQJFS<lIGa63
 R8
 32
-R32
+R31
 !i10b 1
+R32
 R33
 R34
-R35
 !i113 1
 R13
 R14
 Etimer
-Z37 w1680302196
+Z38 w1680389917
 R2
 R3
 R4
 R5
 R0
-Z38 8C:/Git/COMPSYS305/Lab3/Timer/timer.vhd
-Z39 FC:/Git/COMPSYS305/Lab3/Timer/timer.vhd
+Z39 8C:/Git/COMPSYS305/Lab3/Timer/timer.vhd
+Z40 FC:/Git/COMPSYS305/Lab3/Timer/timer.vhd
 l0
 L5
-VZY69_o9MIZ?ALXcG44dJ_1
-!s100 Qb5Z_Na5?;NI6dW>FR@il1
+VHz6O>2dzFlR_G^0DE_E1P2
+!s100 gnCjJITXk[>@i]]4lU`8a0
 R8
 32
-Z40 !s110 1680302213
+Z41 !s110 1680389928
 !i10b 1
-Z41 !s108 1680302213.000000
-Z42 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/timer.vhd|
-Z43 !s107 C:/Git/COMPSYS305/Lab3/Timer/timer.vhd|
+Z42 !s108 1680389928.000000
+Z43 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Lab3/Timer/timer.vhd|
+Z44 !s107 C:/Git/COMPSYS305/Lab3/Timer/timer.vhd|
 !i113 1
 R13
 R14
@@ -204,18 +204,18 @@ R2
 R3
 R4
 R5
-DEx4 work 5 timer 0 22 ZY69_o9MIZ?ALXcG44dJ_1
-l36
+DEx4 work 5 timer 0 22 Hz6O>2dzFlR_G^0DE_E1P2
+l39
 L14
-V31MmCiYT3hW8Cmhb?m>ZT2
-!s100 EzIdfZX^kW4mGg:@^mNRD2
+VS6]LB:gVOT;@Tfi1al6ak3
+!s100 Lj6j4zkRmMD1hDhX^TAXe0
 R8
 32
-R40
-!i10b 1
 R41
+!i10b 1
 R42
 R43
+R44
 !i113 1
 R13
 R14

@@ -4,131 +4,121 @@ use ieee.std_logic_unsigned.all;
 
 entity timer is
     port (
-        clk, start : in std_logic;
-        data_in : in std_logic_vector(9 downto 0);
-        minutes_Dig, tenSec_Dig, oneSec_Dig : out std_logic_vector(6 downto 0);
-        time_out : out std_logic
+        I_CLK, I_START : in std_logic;
+        I_DATA_IN : in std_logic_vector(9 downto 0);
+        Q_MIN, Q_TEN, Q_ONE : out std_logic_vector(6 downto 0);
+        Q_TIME_OUT : out std_logic
     );
 end timer;
 
 architecture behaviour of timer is
-
-    signal min_enable, ten_enable, one_enable : std_logic;
-    signal seconds_overflow : std_logic;
-    signal minutes, tenSec, oneSec : std_logic_vector(3 downto 0);
-    signal top : std_logic_vector(9 downto 0) := "0000000000";
-    signal v_time_out : std_logic;
     component bcd_counter is
         port (
-            clk : in std_logic;
-            direction : in std_logic;
-            init : in std_logic;
-            enable : in std_logic;
-            Q : out std_logic_vector(3 downto 0)
+            I_CLK : in std_logic;
+            I_DIRECTION : in std_logic;
+            I_INIT : in std_logic;
+            I_ENABLE : in std_logic;
+            Q_Q : out std_logic_vector(3 downto 0)
         );
     end component bcd_counter;
 
+    signal M_Q, T_Q, O_Q : std_logic_vector(3 downto 0);
     component BCD_to_SevenSeg is
         port (
-            BCD_digit : in std_logic_vector(3 downto 0);
-            SevenSeg_out : out std_logic_vector(6 downto 0));
+            I_BCD_DIGIT : in std_logic_vector(3 downto 0);
+            Q_SEG : out std_logic_vector(6 downto 0)
+        );
     end component;
+
+    signal L_MIN_ENABLE, L_TEN_ENABLE, L_ONE_ENABLE : std_logic;
+    signal L_SEC_OVERFLOW : std_logic;
+    signal L_TOP : std_logic_vector(9 downto 0) := "0000000000";
+    signal L_TIME_OUT : std_logic;
+    signal L_CLK : std_logic := '0';
+    signal L_CLK_COUNT : integer := 0;
 begin
     -- Minute Counter and Seven Seg Converter
     min_BCD : bcd_counter port map(
-        clk => clk,
-        direction => '1',
-        init => start,
-        enable => min_enable,
-        Q => minutes
+        I_CLK => L_CLK,
+        I_DIRECTION => '1',
+        I_INIT => I_START,
+        I_ENABLE => L_MIN_ENABLE,
+        Q_Q => M_Q
     );
 
-    min_SevenSEG : BCD_to_SevenSeg port map(
-        BCD_digit => minutes,
-        SevenSeg_out => minutes_Dig
+    min_SEG : BCD_to_SevenSeg port map(
+        I_BCD_DIGIT => M_Q,
+        Q_SEG => Q_MIN
     );
     -- Tens of Seconds Counter and Seven Seg Converter
-    tenSec_BCD : bcd_counter port map(
-        clk => clk,
-        direction => '1',
-        init => seconds_overflow,
-        enable => ten_enable,
-        Q => tenSec
+    ten_BCD : bcd_counter port map(
+        I_CLK => L_CLK,
+        I_DIRECTION => '1',
+        I_INIT => L_SEC_OVERFLOW,
+        I_ENABLE => L_TEN_ENABLE,
+        Q_Q => T_Q
     );
-    ten_SevenSEG : BCD_to_SevenSeg port map(
-        BCD_digit => tenSec,
-        SevenSeg_out => tenSec_Dig
+    ten_SEG : BCD_to_SevenSeg port map(
+        I_BCD_DIGIT => T_Q,
+        Q_SEG => Q_TEN
     );
     -- Ones of Seconds Counter and Seven Seg Converter
-    oneSec_BCD : bcd_counter port map(
-        clk => clk,
-        direction => '1',
-        init => start,
-        enable => one_enable,
-        Q => oneSec
+    one_BCD : bcd_counter port map(
+        I_CLK => L_CLK,
+        I_DIRECTION => '1',
+        I_INIT => I_START,
+        I_ENABLE => L_ONE_ENABLE,
+        Q_Q => O_Q
     );
 
-    one_SevenSEG : BCD_to_SevenSeg port map(
-        BCD_digit => oneSec,
-        SevenSeg_out => oneSec_Dig
+    one_SEG : BCD_to_SevenSeg port map(
+        I_BCD_DIGIT => O_Q,
+        Q_SEG => Q_ONE
     );
 
     -- Set the top when start is pressed
-    process (clk)
+    set_top : process (L_CLK)
     begin
-        if (clk'event and clk = '1') then
-            if (start = '1') then
-                top(9 downto 8) <= data_in(9 downto 8);
+        if (L_CLK'event and L_CLK = '1') then
+            if (I_START = '1') then
+                L_TOP(9 downto 8) <= I_DATA_IN(9 downto 8);
 
-                if (data_in(7 downto 4) > "0101") then
-                    top(7 downto 4) <= "0101";
+                if (I_DATA_IN(7 downto 4) > "0101") then
+                    L_TOP(7 downto 4) <= "0101";
                 else
-                    top(7 downto 4) <= data_in(7 downto 4);
+                    L_TOP(7 downto 4) <= I_DATA_IN(7 downto 4);
                 end if;
 
-                if (data_in(3 downto 0) > "1001") then
-                    top(3 downto 0) <= "1001";
+                if (I_DATA_IN(3 downto 0) > "1001") then
+                    L_TOP(3 downto 0) <= "1001";
                 else
-                    top(3 downto 0) <= data_in(3 downto 0);
+                    L_TOP(3 downto 0) <= I_DATA_IN(3 downto 0);
                 end if;
             end if;
         end if;
     end process;
 
-    v_time_out <= '1' when (minutes(1 downto 0) & tenSec & oneSec = top or (top = "0000000000")) else
+    -- Divide System Clock by 25e6 to get 1Hz clock
+    clock_div : process (I_CLK)
+    begin
+        if (I_CLK'event and I_CLK = '1') then
+            L_CLK_COUNT <= L_CLK_COUNT + 1;
+            if (L_CLK_COUNT = (25e6)) then
+                L_CLK <= not L_CLK;
+                L_CLK_COUNT <= 0;
+            end if;
+        end if;
+    end process;
+
+    L_TIME_OUT <= '1' when (M_Q(1 downto 0) & T_Q & O_Q = L_TOP or L_TOP = "0000000000") else
         '0';
-    time_out <= v_time_out;
-    one_enable <= '0' when (v_time_out = '1') else
+    Q_TIME_OUT <= L_TIME_OUT;
+    L_ONE_ENABLE <= '0' when (L_TIME_OUT = '1') else
         '1';
-    ten_enable <= '1' when (oneSec = "1001" and v_time_out = '0') else
+    L_TEN_ENABLE <= '1' when (O_Q = "1001" and L_TIME_OUT = '0') else
         '0';
-    min_enable <= '1' when (oneSec = "1001" and tenSec = "0101" and v_time_out = '0') else
+    L_MIN_ENABLE <= '1' when (O_Q = "1001" and T_Q = "0101" and L_TIME_OUT = '0') else
         '0';
-    seconds_overflow <= '1' when ((oneSec = "1001" and tenSec = "0101" and v_time_out = '0') or start = '1') else
+    L_SEC_OVERFLOW <= '1' when (L_MIN_ENABLE = '1' or I_START = '1') else
         '0';
-    -- process (oneSec)
-    -- begin
-    --     -- If the timer has reached the top
-    --     if (minutes(1 downto 0) & tenSec & oneSec = top) then
-    --         one_enable <= '0';
-    --         time_out <= '1';
-    --     else
-    --         one_enable <= '1';
-    --         time_out <= '0';
-    --         if (oneSec = "1001") then
-    --             ten_enable <= '1';
-    --             if (tenSec = "0101") then
-    --                 min_enable <= '1';
-    --                 seconds_overflow <= '1';
-    --             else
-    --                 min_enable <= '0';
-    --                 seconds_overflow <= '0';
-    --             end if;
-    --         else
-    --             ten_enable <= '0';
-    --             min_enable <= '0';
-    --             seconds_overflow <= '0';
-    --         end if;
-    --     end if;
-    -- end process;
 end architecture;

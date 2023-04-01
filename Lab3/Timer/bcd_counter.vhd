@@ -4,38 +4,38 @@ use ieee.std_logic_unsigned.all;
 
 entity bcd_counter is
     port (
-        clk : in std_logic;
-        direction : in std_logic;
-        init : in std_logic;
-        enable : in std_logic;
-        Q : out std_logic_vector(3 downto 0)
+        I_CLK : in std_logic;
+        I_DIRECTION : in std_logic;
+        I_INIT : in std_logic;
+        I_ENABLE : in std_logic;
+        Q_Q : out std_logic_vector(3 downto 0)
     );
 end bcd_counter;
 
 architecture behaviour of bcd_counter is
-
+    signal L_Q : std_logic_vector(3 downto 0) := "0000";
 begin
-    process (clk)
-        variable v_Q : std_logic_vector(3 downto 0) := "0000";
+    process (I_CLK)
     begin
-        if (Clk'event and Clk = '1') then
-            if (init = '1') then
-                case direction is
-                    when '0' => v_Q := "1001";
-                    when others => v_Q := "0000";
+        if (I_CLK'event and I_CLK = '1') then
+            if (I_INIT = '1') then
+                case I_DIRECTION is
+                    when '0' => L_Q <= "1001";
+                    when others => L_Q <= "0000";
                 end case;
-            elsif (enable = '1') then
-                if (v_Q = "0000" and direction = '0') then
-                    v_Q := "1001";
-                elsif (v_Q = "1001" and direction = '1') then
-                    v_Q := "0000";
-                elsif (direction = '1') then
-                    v_Q := v_Q + '1';
+            elsif (I_ENABLE = '1') then
+                if (L_Q = "0000" and I_DIRECTION = '0') then
+                    L_Q <= "1001";
+                elsif (L_Q = "1001" and I_DIRECTION = '1') then
+                    L_Q <= "0000";
+                elsif (I_DIRECTION = '1') then
+                    L_Q <= L_Q + '1';
                 else
-                    v_Q := v_Q - '1';
+                    L_Q <= L_Q - '1';
                 end if;
             end if;
-            Q <= v_Q;
         end if;
     end process;
+
+    Q_Q <= L_Q;
 end architecture;

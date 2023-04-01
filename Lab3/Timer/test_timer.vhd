@@ -7,7 +7,7 @@ end test_timer;
 
 architecture test of test_timer is
 
-    constant clk_hz : integer := 1;
+    constant clk_hz : integer := 50e6;
     constant clk_period : time := 1 sec / clk_hz;
 
     signal t_clk : std_logic := '1';
@@ -18,10 +18,10 @@ architecture test of test_timer is
 
     component timer is
         port (
-            clk, start : in std_logic;
-            data_in : in std_logic_vector(9 downto 0);
-            minutes_Dig, tenSec_Dig, oneSec_Dig : out std_logic_vector(6 downto 0);
-            time_out : out std_logic
+            I_CLK, I_START : in std_logic;
+            I_DATA_IN : in std_logic_vector(9 downto 0);
+            Q_MIN, Q_TEN, Q_ONE : out std_logic_vector(6 downto 0);
+            Q_TIME_OUT : out std_logic
         );
     end component timer;
 begin
@@ -40,13 +40,13 @@ begin
     end process clock_gen;
 
     DUT : timer port map(
-        clk => t_clk,
-        start => t_start,
-        data_in => t_data_in,
-        minutes_Dig => t_minutes,
-        tenSec_Dig => t_tenSec,
-        oneSec_Dig => t_oneSec,
-        time_out => t_time_out
+        I_CLK => t_clk,
+        I_START => t_start,
+        I_DATA_IN => t_data_in,
+        Q_MIN => t_minutes,
+        Q_TEN => t_tenSec,
+        Q_ONE => t_oneSec,
+        Q_TIME_OUT => t_time_out
     );
 
 end architecture;
