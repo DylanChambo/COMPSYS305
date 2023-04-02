@@ -7,7 +7,7 @@ end test_timer;
 
 architecture test of test_timer is
 
-    constant clk_hz : integer := 50e6;
+    constant clk_hz : integer := 50;
     constant clk_period : time := 1 sec / clk_hz;
 
     signal t_clk : std_logic := '1';
