@@ -3,6 +3,9 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity timer is
+    generic (
+        CLK_FREQ : integer := 50e6
+    );
     port (
         I_CLK, I_START : in std_logic;
         I_DATA_IN : in std_logic_vector(9 downto 0);
@@ -11,7 +14,7 @@ entity timer is
     );
 end timer;
 
-architecture behaviour of timer is
+architecture rtl of timer is
     component bcd_counter is
         port (
             I_CLK : in std_logic;
@@ -103,7 +106,7 @@ begin
     begin
         if (I_CLK'event and I_CLK = '1') then
             L_CLK_COUNT <= L_CLK_COUNT + 1;
-            if (L_CLK_COUNT = (25e6)) then
+            if (L_CLK_COUNT = (CLK_FREQ / 2)) then
                 L_CLK <= not L_CLK;
                 L_CLK_COUNT <= 0;
             end if;
