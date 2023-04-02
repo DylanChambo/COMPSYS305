@@ -32,7 +32,7 @@ architecture behaviour of timer is
 
     signal L_MIN_ENABLE, L_TEN_ENABLE, L_ONE_ENABLE : std_logic;
     signal L_SEC_OVERFLOW : std_logic;
-    signal L_TOP : std_logic_vector(9 downto 0) := "0000000000";
+    signal L_TOP : std_logic_vector(9 downto 0) := (others => '0');
     signal L_TIME_OUT : std_logic;
     signal L_CLK : std_logic := '0';
     signal L_CLK_COUNT : integer := 0;
