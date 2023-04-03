@@ -43,12 +43,13 @@ architecture rtl of timer is
     signal L_TOP : std_logic_vector(9 downto 0) := (others => '0');
     signal L_TIME_OUT : std_logic;
     signal L_TICK : integer := 0;
+    signal L_START : std_logic;
 begin
     -- Minute Counter and Seven Seg Converter
     min_BCD : entity work.bcd_counter port map(
         I_CLK => I_CLK,
         I_DIRECTION => '1',
-        I_INIT => I_START,
+        I_INIT => L_START,
         I_ENABLE => L_MIN_ENABLE,
         Q_Q => M_Q
         );
@@ -73,7 +74,7 @@ begin
     one_BCD : entity work.bcd_counter port map(
         I_CLK => I_CLK,
         I_DIRECTION => '1',
-        I_INIT => I_START,
+        I_INIT => L_START,
         I_ENABLE => L_ONE_ENABLE,
         Q_Q => O_Q
         );
@@ -87,7 +88,7 @@ begin
     process (I_CLK)
     begin
         if (rising_edge(I_CLK)) then
-            if (I_START = '1') then
+            if (L_START = '1') then
                 SetTop(I_DATA_IN, L_TOP);
                 L_TICK <= 0;
             elsif (L_TIME_OUT = '0') then
@@ -113,6 +114,7 @@ begin
     L_TIME_OUT <= '1' when (M_Q(1 downto 0) & T_Q & O_Q = L_TOP) else
         '0';
     Q_TIME_OUT <= L_TIME_OUT;
-    L_SEC_OVERFLOW <= '1' when (L_MIN_ENABLE = '1' or I_START = '1') else
+    L_SEC_OVERFLOW <= '1' when (L_MIN_ENABLE = '1' or L_START = '1') else
         '0';
+    L_START <= not I_START;
 end architecture;
