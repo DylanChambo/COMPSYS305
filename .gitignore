@@ -2,3 +2,7 @@
 *.bak
 c5_pin_model_dump.txt
 output_files/
+db/
+incremental_db/
+simulation/
+devkits/
