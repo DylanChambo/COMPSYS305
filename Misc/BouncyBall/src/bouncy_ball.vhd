@@ -13,9 +13,9 @@ architecture behavior of bouncy_ball is
 
 	signal ball_on : std_logic;
 	signal size : std_logic_vector(9 downto 0);
-	signal ball_y_pos : std_logic_vector(9 downto 0);
+	signal ball_y_pos : std_logic_vector(9 downto 0) := (others => '0');
 	signal ball_x_pos : std_logic_vector(10 downto 0);
-	signal ball_y_motion : std_logic_vector(9 downto 0);
+	signal ball_y_motion : std_logic_vector(9 downto 0) := (others => '0');
 
 begin
 	Move_Ball : process (vert_sync)

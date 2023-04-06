@@ -25,6 +25,8 @@ architecture behavior of game is
     signal V_PIXEL_ROW : std_logic_vector(9 downto 0);
     signal V_PIXEL_COL : std_logic_vector(9 downto 0);
 
+    signal L_CLK : std_logic := '1';
+
 begin
     ball : entity work.bouncy_ball
         port map(
@@ -41,7 +43,7 @@ begin
 
     video : entity work.VGA_SYNC
         port map(
-            clock_25Mhz => I_CLK,
+            clock_25Mhz => L_CLK,
             RED => B_RED,
             GREEN => B_GREEN,
             BLUE => B_BLUE,
@@ -54,6 +56,13 @@ begin
             pixel_row => V_PIXEL_ROW,
             pixel_column => V_PIXEL_COL
         );
+
+    clk_div : process (I_CLK)
+    begin
+        if (rising_edge(I_CLK)) then
+            L_CLK <= not L_CLK;
+        end if;
+    end process;
 
     Q_V_SYNC <= V_V_SYNC;
 end architecture;

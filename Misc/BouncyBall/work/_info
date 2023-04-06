@@ -1,0 +1,225 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Git/COMPSYS305/Misc/BouncyBall
+Ebouncy_ball
+Z1 w1680577224
+Z2 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Git/COMPSYS305/Misc/BouncyBall/src/bouncy_ball.vhd
+Z7 FC:/Git/COMPSYS305/Misc/BouncyBall/src/bouncy_ball.vhd
+l0
+L5
+V:^j92Z5=cm4^KDG6ef>PU1
+!s100 EMJl_mC`h<^=fAz?6A>RL2
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1680577238
+!i10b 1
+Z10 !s108 1680577237.000000
+Z11 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Misc/BouncyBall/src/bouncy_ball.vhd|
+Z12 !s107 C:/Git/COMPSYS305/Misc/BouncyBall/src/bouncy_ball.vhd|
+!i113 1
+Z13 o-work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 11 bouncy_ball 0 22 :^j92Z5=cm4^KDG6ef>PU1
+l20
+L12
+VCX13^@Wa?74HMz3d`_dP?2
+!s100 m`>90;IThGRCoeai@[bI>0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Egame
+Z15 w1680578703
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z17 8C:/Git/COMPSYS305/Misc/BouncyBall/src/game.vhd
+Z18 FC:/Git/COMPSYS305/Misc/BouncyBall/src/game.vhd
+l0
+L5
+VLLnCUKL0Xo:3@VA_`eBO[1
+!s100 :;SL3I?b`P^V`e46S]PO>2
+R8
+32
+Z19 !s110 1680580496
+!i10b 1
+Z20 !s108 1680580496.000000
+Z21 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Misc/BouncyBall/src/game.vhd|
+Z22 !s107 C:/Git/COMPSYS305/Misc/BouncyBall/src/game.vhd|
+!i113 1
+R13
+R14
+Abehavior
+Z23 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+Z24 DEx4 work 8 vga_sync 0 22 LLmU>W?^PSJ]fk1=M1K^B2
+R16
+R4
+R5
+Z25 DEx4 work 4 game 0 22 LLnCUKL0Xo:3@VA_`eBO[1
+l24
+L19
+Vfid_Ldc<@Tif_6l27HU2d1
+!s100 OnEh4Yjf[jAc;F0]TH;O93
+R8
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
+Emouse
+Z26 w1680573804
+R23
+R3
+R4
+R5
+R0
+Z27 8C:/Git/COMPSYS305/Misc/BouncyBall/src/mouse.vhd
+Z28 FC:/Git/COMPSYS305/Misc/BouncyBall/src/mouse.vhd
+l0
+L9
+VWRjX4<RYZ8X4A;Uk7R=562
+!s100 I4TeDE=E1mniJQdznk@RH1
+R8
+32
+Z29 !s110 1680575439
+!i10b 1
+Z30 !s108 1680575439.000000
+Z31 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Misc/BouncyBall/src/mouse.vhd|
+Z32 !s107 C:/Git/COMPSYS305/Misc/BouncyBall/src/mouse.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R23
+R3
+R4
+R5
+DEx4 work 5 mouse 0 22 WRjX4<RYZ8X4A;Uk7R=562
+l43
+L19
+V[el7TNWD`G5bI597hIJ`k1
+!s100 Md<]A1G8mO<ae701fl7ob2
+R8
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R13
+R14
+Etest_game
+Z33 w1680580521
+R16
+R4
+R5
+R0
+Z34 8C:/Git/COMPSYS305/Misc/BouncyBall/test/test_game.vhd
+Z35 FC:/Git/COMPSYS305/Misc/BouncyBall/test/test_game.vhd
+l0
+L5
+V7zFQKF==62F@>A2UDooI:1
+!s100 _P2lz<kR^W=dB3af?KNGU1
+R8
+32
+Z36 !s110 1680580526
+!i10b 1
+Z37 !s108 1680580526.000000
+Z38 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Misc/BouncyBall/test/test_game.vhd|
+Z39 !s107 C:/Git/COMPSYS305/Misc/BouncyBall/test/test_game.vhd|
+!i113 1
+R13
+R14
+Asim
+R25
+R16
+R4
+R5
+Z40 DEx4 work 9 test_game 0 22 7zFQKF==62F@>A2UDooI:1
+l20
+L8
+Z41 VN8ibkU_k?70eKoh:Tecg<3
+Z42 !s100 =KHXAAMD^SAOLNA@inh[W1
+R8
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R13
+R14
+Evga_sync
+Z43 w1680579745
+R23
+R3
+R4
+R5
+R0
+Z44 8C:/Git/COMPSYS305/Misc/BouncyBall/src/vga_sync.vhd
+Z45 FC:/Git/COMPSYS305/Misc/BouncyBall/src/vga_sync.vhd
+l0
+L7
+VLLmU>W?^PSJ]fk1=M1K^B2
+!s100 eJLZ=M3K^WABY;JT[FG[83
+R8
+32
+Z46 !s110 1680580495
+!i10b 1
+Z47 !s108 1680580495.000000
+Z48 !s90 -reportprogress|300|-work|work|C:/Git/COMPSYS305/Misc/BouncyBall/src/vga_sync.vhd|
+Z49 !s107 C:/Git/COMPSYS305/Misc/BouncyBall/src/vga_sync.vhd|
+!i113 1
+R13
+R14
+Aa
+R23
+R3
+R4
+R5
+R24
+l19
+L14
+VN4Yz?@eBMUCGcjfZOUZ@G3
+!s100 8CezXM<3]cm1m5m1GInam2
+R8
+32
+R46
+!i10b 1
+R47
+R48
+R49
+!i113 1
+R13
+R14

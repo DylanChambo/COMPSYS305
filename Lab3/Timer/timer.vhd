@@ -111,7 +111,7 @@ begin
         end if;
     end process;
 
-    L_TIME_OUT <= '1' when (M_Q(1 downto 0) & T_Q & O_Q = L_TOP) else
+    L_TIME_OUT <= '1' when (M_Q(1 downto 0) & T_Q & O_Q >= L_TOP) else
         '0';
     Q_TIME_OUT <= L_TIME_OUT;
     L_SEC_OVERFLOW <= '1' when (L_MIN_ENABLE = '1' or L_START = '1') else

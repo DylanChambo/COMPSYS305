@@ -14,7 +14,7 @@ end VGA_SYNC;
 architecture a of VGA_SYNC is
 	signal horiz_sync, vert_sync : std_logic;
 	signal video_on, video_on_v, video_on_h : std_logic;
-	signal h_count, v_count : std_logic_vector(9 downto 0);
+	signal h_count, v_count : std_logic_vector(9 downto 0) := (others => '0');
 
 begin
 
